@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color App</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        .container{
+        
+            border: 2px solid black;
+            margin: auto;
+            width: 400px;
+            height: 400px;
+            box-shadow: inset 5px 5px 12px black ,5px 5px 12px;
+            
+        }
+        h1{
+            text-align: center;
+            font-family: sans-serif;
+            margin-bottom: 80px;
+            margin-top: 20px;
+            
+        }
+        
+            
+        
+        label{
+            font-family: 'comic sans ms';
+            text-align: center;
+        }
+
+        p{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>Color Changer App</h1>
+
+    <label>
+        <h2>Background Color</h2>
+    </label>
+    <p><input type="color" id="bg-color"></p>
+    <br/>
+
+    <label>
+        <h2>Text Color</h2>
+    </label>
+    <p><input type="color" id="text-color"></p> 
+</div>
+
+    <script>
+        let bgcolor = document.getElementById("bg-color");
+        let textcolor = document.getElementById("text-color");
+
+        bgcolor.addEventListener("change", function () {
+            document.body.style.backgroundColor = bgcolor.value;
+        });
+
+        textcolor.addEventListener("change", function () {
+            document.body.style.color = textcolor.value;
+        });
+    
+    </script>
+</body>
+</html>

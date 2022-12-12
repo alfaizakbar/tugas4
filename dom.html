@@ -1,0 +1,79 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body>
+    <div id="app"></div>
+
+
+    <p class="tes">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo excepturi 
+        corporis molestiae dolorem molestias delectus temporibus quibusdam nam quidem. 
+        Veritatis quaerat cumque voluptas perferendis? Non commodi iste modi perspiciatis sequi?
+    </p>
+    <p class="tes">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo excepturi 
+        corporis molestiae dolorem molestias delectus temporibus quibusdam nam quidem. 
+        Veritatis quaerat cumque voluptas perferendis? Non commodi iste modi perspiciatis sequi?
+    </p>
+    <p class="tes">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo excepturi 
+        corporis molestiae dolorem molestias delectus temporibus quibusdam nam quidem. 
+        Veritatis quaerat cumque voluptas perferendis? Non commodi iste modi perspiciatis sequi?
+    </p>
+    <script>
+        let tutorial = document.getElementById("app");
+        let nameclass = document.getElementsByClassName("tes");
+        let judul = document.createElement("h1");
+        
+        
+        document.body.append(judul);
+        tutorial.innerText = "YAPENBIT";
+        tutorial.innerText ="Saya untuk di hapus";
+        tutorial.remove();
+        
+
+        setInterval(function(){
+        tutorial.style.backgroundColor="blue";              
+        tutorial.style.textAlign="center";
+        tutorial.style.padding="10px";
+        tutorial.style.fontFamily="'comic sans ms'"
+        tutorial.style.color="white";
+        tutorial.style.boxShadow="5px 5px 12px black"
+
+        setTimeout(function(){
+            tutorial.style.backgroundColor="red";
+
+        },100)
+        },300)
+
+        setInterval(function(){
+            nameclass[0].style.color="red";
+            nameclass[0].style.backgroundColor="grey";
+            nameclass[0].style.boxShadow="5px 5px 12px black";
+            nameclass[0].style.textAlign="center";
+
+            nameclass[1].style.color="yellow";
+            nameclass[1].style.backgroundColor="grey";
+            nameclass[1].style.boxShadow="5px 5px 12px black";
+            nameclass[1].style.textAlign="center";
+
+            nameclass[2].style.color="green";
+            nameclass[2].style.backgroundColor="grey";
+            nameclass[2].style.boxShadow="5px 5px 12px black";
+            nameclass[2].style.textAlign="center";
+
+        setTimeout(function(){
+            nameclass[0].style.color="green";
+            nameclass[1].style.color="red";
+            nameclass[2].style.color="yellow";
+        },100)
+        },300)
+        
+    </script>
+</body>
+</html>

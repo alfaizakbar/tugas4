@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java</title>
+</head>
+<body>
+    <button onclick="myFunction()">My Name</button>
+
+    <div id=""></div>
+    
+    <script>
+        const nama = prompt("Siapa Nama Kamu?");
+        const namaSekolah = prompt("asal Sekolah?");
+        let kelas = prompt("Kelas berapa?");
+        let alamat = prompt("Alamat?");
+        let namakelompok = [nama, namaSekolah, kelas, alamat];
+
+        //let Alert = prompt("Siapa Namanya...?");
+        document.write(`<p>Hai ${nama}</p>`,
+                        `<p>Sekolah ${namaSekolah}</p>`,
+                        `<p>Kelas ${kelas}</p>`,
+                        `<p>Alamat ${alamat}</p>`);
+    
+
+        
+        console.log("Nama :" ,nama)
+        console.log("NamaSekolah :" ,namaSekolah)
+        console.log("Kelas :" ,kelas)
+        console.log("Alamat :" ,alamat)
+
+        function myFunction(){
+        alert(namakelompok);
+        
+        }
+
+
+    </script>
+</body>
+</html>
